@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+<form action="/" method="post">
+    <label for="mystr">Enter your string</label>
+    <input type="text" name="mystr">
+    <button type="submit">Submit</button>
+</form>
+
+{% if the_str: %}
+<p style="color:blue;font-size:21px;">Morse code for <b>'{{ the_str }}'</b>:   <b>{{ code }}</b></p>
+{% endif %}
+
+</body>
+</html>
